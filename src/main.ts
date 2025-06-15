@@ -1,4 +1,5 @@
 import './style.css';
+import { dadosSchema } from './validators/dadosSchema.ts';
 
 const form = document.querySelector<HTMLFormElement>('#form')!;
 const name = document.querySelector<HTMLInputElement>('#name')!;
@@ -23,7 +24,7 @@ form.addEventListener('submit', async(event) => {
     event.preventDefault();
 
     try {
-        const parsedData = ({
+        const parsedData = dadosSchema.parse({
             name: name.value,
             email: email.value,
             gender: getGenderSelected(),
