@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Formulário DarkMode</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="container">
+      <header class="content-header">
+        <div class="content-header">
+          <h1 class="heading">Inscrição nos cursos FIC</h1>
+          <p class="header-paragraph">Prazo para responder: <span>05/05/2025</span></p>
+        </div>
+
+        <div>
+          <img id="change-mode" src="public/img/dark-mode-icon.png" alt="Simbolo de modo escuro" class="dark-mode-icon" onclick="changeMode()"/>
+        </div>
+      </header>
+      
+      <form action="" id="form">
+        <div class="input-section">
+          <label for="name"><span>*</span> Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Ex.: Maria de Oliveira">
+        </div>
+
+        <div class="input-section">
+          <label for="email"><span>*</span> E-mail:</label>
+          <input type="text" id="email" name="email" placeholder="Ex.: maria.oliveira@gmail.com">
+        </div>
+
+        <div class="gender">
+          <div>
+            <label for=""><span>*</span> Sexo: </label>
+          </div>
+
+          <div class="gender-options">
+            <div>
+              <input type="radio" name="gender" id="male" value="male">
+              <label for="male">Masculino</label>
+            </div>
+
+            <div>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="female">Feminino</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-section">
+          <label for="course"><span>*</span> Curso:</label>
+            <select name="course" id="course" class="course">
+              <option value="" selected>Selecione um curso</option>
+              <option value="html-css">HTML e CSS</option>
+              <option value="javascript">JavaScript</option>
+              <option value="react">React</option>
+              <option value="nodejs">Node.js</option>
+              <option value="python">Python</option>
+              <option value="sql">SQL</option>
+              <option value="java">Java</option>
+              <option value="typescript">TypeScript</option>
+              <option value="git-github">Git e GitHub</option>
+              <option value="ui-ux">UI/UX Design</option>
+            </select>
+        </div>
+
+        <div class="description input-section">
+          <label for="description">Descreva o atendimento especial (opcional):</label>
+          <textarea name="description" id="description" placeholder="Ex.: Necessito de atendimento especial devido a..."></textarea>
+        </div>
+
+        <div class="terms">
+          <input type="checkbox" name="terms" id="terms" value="terms">
+          <label for="terms"><span>*</span> Estou de acordo com o termos de serviço</label>
+        </div>
+
+        <div class="message">
+          <p>Os campos marcados com <span>*</span> são obrigatórios</p>
+        </div>
+
+        <div>
+          <button type="submit" id="button">Realizar inscrição</button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

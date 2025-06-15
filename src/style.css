@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: #FFF;
+  color: #484946;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  gap: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F1F1F160;
+  border-radius: 0 8px 8px 0;
+  padding: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content-header {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.heading {
+  margin-bottom: 48px;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.header-paragraph > span {
+  font-weight: 700;
+}
+
+.dark-mode-icon {
+  size: 4px;
+  cursor: pointer;
+  width: 64%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto; 
+  width: 100%;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  background-color: #F1F1F160;
+  font-weight: 700;
+  border-left: 8px solid #286BB9;
+}
+
+.input-section:hover,
+.gender:hover,
+.terms:hover {
+  border-left: 8px solid #125cb0;
+}
+
+.input-section input,
+.input-section select,
+.input-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #286BB9;
+  border-radius: 4px;
+}
+
+form span {
+  color: #F42E31;
+}
+
+/* todo: change the round border */
+.gender {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  background-color: #F1F1F160;
+  font-weight: 700;
+  border-left: 8px solid #286BB9;
+}
+
+form select {
+  background-color: #FFF;
+}
+
+.gender-options {
+  display: flex;
+  gap: 32px;
+  font-weight: 400;
+}
+
+input[type="radio"] {
+  accent-color: #286BB9; 
+}
+
+.description textarea {
+  height: 8rem;
+}
+
+.terms {
+  gap: 8px;
+  padding: 24px;
+  background-color: #F1F1F160;
+  font-weight: 700;
+  border-left: 8px solid #286BB9;
+}
+
+.terms,
+.message {
+  display: flex;
+  font-weight: 300;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #FBFCFF;
+  background-color: #286BB9;
+  border: 0px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #125cb0;
+  cursor: pointer;
+}
+
+/* dark mode */
+body.dark-mode {
+  background-color: black;
+  color: #FCFDFC
+}
+
+header.dark-mode {
+  background-color: #373636;
+}
+
+.input-section.dark-mode {
+  background-color: #373636;
+}
+
+.input-section input.dark-mode,
+.input-section select.dark-mode,
+.input-section textarea.dark-mode {
+  background-color: #1E1E1E;
+}
+
+.gender.dark-mode {
+  background-color: #373636;
+}
+
+form select.dark-mode {
+  background-color: #1E1E1E;
+}
+
+.terms.dark-mode {
+  background-color: #373636;
+}
