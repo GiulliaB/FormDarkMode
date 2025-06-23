@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "c8b9",
+      "name": "GIULLIA",
+      "email": "giulliachiarotti@gmail.com",
+      "gender": "female",
+      "course": "html-css",
+      "description": "",
+      "terms": true
+    },
+    {
+      "id": "1da2",
+      "name": "Adriana",
+      "email": "adrianakarineklipel@hotmail.com",
+      "gender": "female",
+      "course": "react",
+      "description": "",
+      "terms": true
+    }
+  ]
+}

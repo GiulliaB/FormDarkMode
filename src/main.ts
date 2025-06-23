@@ -40,6 +40,7 @@ form.addEventListener('submit', async(event) => {
         })
 
         limparFormulario();
+        carregarInscricoes();
     } catch (err) {
         console.error("Erro de validação:", err);
     }
@@ -51,3 +52,31 @@ const body = document.body;
 changeMode?.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  carregarInscricoes();
+});
+
+async function carregarInscricoes() {
+  const tabela = document.querySelector<HTMLTableElement>('#table tbody')!;
+  tabela.innerHTML = '';
+
+  try {
+    const resposta = await fetch('http://localhost:3000/data');
+    const dados = await resposta.json();
+
+    dados.forEach((item: any) => {
+      const linha = document.createElement('tr');
+      linha.innerHTML = `
+        <td>${item.name}</td>
+        <td>${item.email}</td>
+        <td>${item.gender === 'male' ? 'Masculino' : 'Feminino'}</td>
+        <td>${item.course}</td>
+        <td>${item.description || '-'}</td>
+      `;
+      tabela.appendChild(linha);
+    });
+  } catch (err) {
+    console.error('Erro ao carregar dados:', err);
+  }
+}
