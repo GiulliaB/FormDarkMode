@@ -17,6 +17,24 @@
       "course": "react",
       "description": "",
       "terms": true
+    },
+    {
+      "id": "f2c6",
+      "name": "GIULLIA",
+      "email": "adrianakarineklipel@hotmail.com",
+      "gender": "female",
+      "course": "react",
+      "description": "",
+      "terms": true
+    },
+    {
+      "id": "dd4d",
+      "name": "GIULLIA",
+      "email": "adrianakarineklipel@hotmail.com",
+      "gender": "female",
+      "course": "react",
+      "description": "",
+      "terms": true
     }
   ]
 }

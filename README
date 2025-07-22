@@ -1,0 +1,8 @@
+Formulário DarkMode 
+
+passo a passo:
+
+npm i
+npx json-server --watch data.json --port 3000
+npm run dev
+
